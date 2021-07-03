@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div id="main" class="main-container">
+      <h1 class="title">Quiz App</h1>
+    </div>
+    <div id="container" class="container">
+      <div id="question" class="question"></div>
+      <label class="opt">
+        <input type="radio" name="option" value="1" /><span id="opt1"></span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="option" value="2" /><span id="opt2"></span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="option" value="3" /><span id="opt3"></span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="option" value="4" /><span id="opt4"></span>
+      </label>
+      <button id="btn-n" class="btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <div
+      id="quiz-result"
+      class="container quiz-result"
+      style="display: none"
+    ></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
